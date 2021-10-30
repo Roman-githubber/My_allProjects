@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admission Form</title>
+  </head>
+
+  <style>
+    *,
+    ::before,
+    ::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+        Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background: rgb(155, 244, 250);
+      overflow: hidden;
+    }
+    #section {
+      width: 100vw;
+      height: 100vh;
+    }
+    .form-container {
+      width: 40%;
+      text-transform: capitalize;
+      margin: 1rem auto;
+      background: #fff;
+      padding: 1rem 2rem;
+      box-shadow: 0px -5px 5px rgb(241, 240, 240),
+        0px 5px 6px rgb(202, 201, 201);
+      border-radius: 0.5rem;
+    }
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 3.5rem;
+      color: rgb(6, 151, 6);
+    }
+    .form-container form {
+      padding: 0.5rem 2rem;
+    }
+    .form-container button {
+      text-transform: capitalize;
+      font-size: 1.2rem;
+      padding: 0.25rem 0.5rem;
+      letter-spacing: 0.1rem;
+      background: rgb(0, 183, 255);
+      border-radius: 0.3rem;
+      border: none;
+      outline: none;
+    }
+    .form-container label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    .form-container input,
+    textarea {
+      margin-bottom: 1.8rem;
+      border: 1px solid rgb(235, 233, 233);
+      padding: 0.3rem;
+      background: rgb(244, 252, 249);
+      border-radius: 0.3rem;
+      outline: none;
+    }
+    .form-container input {
+      width: 25rem;
+      padding: 0.5rem 0.6rem;
+      background: rgb(244, 252, 249);
+    }
+    .form-container select {
+      font-size: 1rem;
+      width: 9rem;
+      border-radius: 0.3rem;
+      padding: 0.2rem;
+      margin-bottom: 1.7rem;
+    }
+  </style>
+
+  <body>
+    <!--Section-->
+    <section id="section">
+      <div class="form-container">
+        <h2>Admission Form</h2>
+        <form>
+          <label>firstName</label>
+          <input type="text" placeholder="e.g. john" />
+          <label>lastName</label>
+          <input type="text" placeholder="e.g doe" />
+          <label>qualification</label>
+          <input type="text" placeholder="e.g. bca" />
+          <label>desired course</label>
+          <input type="text" placeholder="e.g mca" />
+          <label>choose chage</label>
+          <select>
+            <option value="22">22</option>
+          </select>
+          <label>address</label>
+          <textarea
+            type="text"
+            rows="10"
+            cols="48"
+            placeholder="your address"
+          ></textarea>
+          <button type="submit">submit</button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
