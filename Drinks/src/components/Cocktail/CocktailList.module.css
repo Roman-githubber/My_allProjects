@@ -1,0 +1,50 @@
+.cocktail {
+  background: rgb(56, 56, 56);
+  margin-bottom: 2rem;
+  /* box-shadow: 0px 5px 10px #999; */
+  transition: all 0.3s linear;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  border-radius: 10px;
+}
+.cocktail:hover {
+  background: rgb(87, 87, 87);
+}
+.cocktail img {
+  height: 20rem;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-radius: 10px;
+}
+.cocktail-info {
+  padding: 1.5rem;
+}
+.cocktail-info h3,
+.cocktail-info h4,
+.cocktail-info p {
+  color: #fff;
+  margin-bottom: 0.6rem;
+}
+.cocktail-info h3 {
+  font-size: 2rem;
+}
+.cocktail-info p {
+  color: rgb(185, 184, 184);
+  margin-bottom: 1rem;
+}
+
+.details-btn {
+  text-decoration: none;
+  color: #fff;
+  background: rgb(43, 138, 226);
+  padding: 0.25rem 0.5rem;
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 600px) {
+  .cocktail {
+    width: 65vw;
+  }
+}

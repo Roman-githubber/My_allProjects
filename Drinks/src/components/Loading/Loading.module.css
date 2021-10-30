@@ -1,0 +1,28 @@
+.loading {
+  margin-top: -50px;
+  height: 80vh;
+  width: 90vw;
+  display: grid;
+  place-items: center;
+}
+
+.spinner {
+  display: inline-block;
+  margin-left: 40rem;
+  width: 200px;
+  height: 200px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid teal;
+  border-color: teal transparent teal teal;
+  animation: spinner 1.2s linear infinite;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

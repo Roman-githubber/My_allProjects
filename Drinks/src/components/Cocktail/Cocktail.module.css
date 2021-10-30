@@ -1,0 +1,39 @@
+.cocktails-section {
+  padding: 5rem 0;
+}
+.cocktails-title {
+  position: relative;
+  color: #fff;
+  font-size: 2rem;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+.cocktails-title span {
+  color: rgb(6, 202, 228);
+}
+.cocktails-title::after {
+  position: absolute;
+  content: '';
+  top: 140%;
+  left: 47%;
+  background-color: rgb(6, 202, 228);
+  height: 2px;
+  width: 100px;
+}
+
+.cocktails-center {
+  margin: 0 auto;
+  width: 80vw;
+  max-width: 73.25rem;
+  display: grid;
+  row-gap: 2rem;
+  column-gap: 2rem;
+}
+@media screen and (min-width: 576px) {
+  .cocktails-center {
+    grid-template-columns: repeat(auto-fill, minmax(338.8px, 1fr));
+  }
+}
