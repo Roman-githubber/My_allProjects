@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LightBox Gallery</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background: #222;
+      }
+
+      .gallery {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: 0 auto;
+      }
+
+      .gallery a {
+        height: 200px;
+        width: 300px;
+        margin: 20px;
+        border-radius: 5px;
+        overflow: hidden;
+      }
+
+      .gallery a img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+      .gallery a img:hover {
+        transform: scale(1.4);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gallery">
+      <a href="Images/image-product-1.jpg">
+        <img src="Images/image-product-1.jpg" alt=""
+      /></a>
+
+      <a href="Images/image-product-2.jpg">
+        <img src="Images/image-product-2.jpg" alt=""
+      /></a>
+    </div>
+    <!--javascript-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+
+    <script>
+      lightGallery(document.querySelector('.gallery'));
+    </script>
+  </body>
+</html>
